@@ -25,4 +25,4 @@ The environment is determined in this order:
 2. `DRUPAL_BUILD` environment variable e.g. `DRUPAL_BUILD="local" drush build`
 3. `config_path/environment` file e.g. `sites/default/environment`
 
-For the third option, `environment` file will simply contain a string which would represent the environment. The third option was added so that it would rely on a file that won't be touched by anyone. This avoids accidentally running an incorrect build on a different environment e.g. running `drush build local` on a staging environment.
+For the third option, `environment` file will simply contain a string which would represent the environment. The third option was added so that it would rely on a file that isn't often changed. This avoids accidentally running an incorrect build on a different environment e.g. running `drush build local` on a `staging` environment.
